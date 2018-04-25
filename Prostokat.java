@@ -112,9 +112,9 @@ public class Prostokat implements Figura, Comparable<Figura> {
             }
         }
 
-       // if (f instanceof Kolo){
-            // zaimplementowane w kole
-        //}
+        if (f instanceof Kolo){
+             return ((Kolo) f).przecina(this);
+        }
         return false;
     }
     @Override

@@ -61,12 +61,12 @@ public class Kwadrat extends FiguraForemna {
                 }
             }
         }
-        // if (f instanceof Kolo){
-        // zaimplementowane w kole
-        //}
-        // if (f instanceof Prostokat){
-        // zaimplementowane w kole
-        //}
+         if (f instanceof Kolo){
+            return ((Kolo) f).przecina(this);
+        }
+         if (f instanceof Prostokat){
+            return ((Prostokat) f).przecina(this);
+        }
 
         return false;
     }
